@@ -1,0 +1,65 @@
+.main {
+  padding: 20px 20px;
+
+  .custom-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    @media (min-width: 768px) {
+      gap: 0;
+      flex-wrap: nowrap;
+    }
+
+    .sidebar-col {
+      padding: 0 15px;
+      width: 100%;
+
+      @media (min-width: 768px) {
+        width: 30%;
+      }
+    }
+
+    .svg-col {
+      padding: 0 15px;
+      width: 100%;
+
+      @media (min-width: 768px) {
+        width: 70%;
+      }
+    }
+  }
+}
+
+.sidebar-container {
+  padding: 20px 10px;
+  background-color: #eee;
+
+  .door-dot {
+    border-radius: 50%;
+    min-height: 15px;
+    min-width: 15px;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(51, 131, 51);
+  }
+
+  .door-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .mat-divider {
+    margin: 20px 0;
+  }
+}
+
+.svg-container {
+  width: 100%;
+  border: 1px solid #000;
+
+  svg {
+    width: 100%;
+  }
+}
