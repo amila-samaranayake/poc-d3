@@ -6,6 +6,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import { HeaderComponent } from './components/header/header.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [HeaderComponent],
@@ -16,6 +18,8 @@ import { HeaderComponent } from './components/header/header.component';
     MatCardModule,
     MatListModule,
     MatDividerModule,
+    MatIconModule,
+    MatButtonModule,
   ],
   exports: [
     MatGridListModule,
@@ -23,7 +27,9 @@ import { HeaderComponent } from './components/header/header.component';
     MatCardModule,
     MatListModule,
     MatDividerModule,
-    HeaderComponent
+    HeaderComponent,
+    MatIconModule,
+    MatButtonModule
   ],
 })
 export class SharedModule {}

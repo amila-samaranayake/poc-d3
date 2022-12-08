@@ -41,11 +41,12 @@
 .sidebar-container {
     padding: 20px 15px;
     background-color: #eee;
+    height: 100%;
 
     .door-dot {
         border-radius: 50%;
-        min-height: 15px;
-        min-width: 15px;
+        min-height: 10px;
+        min-width: 10px;
         display: inline-block;
         padding: 5px;
         background-color: rgb(51, 131, 51);
@@ -55,11 +56,75 @@
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
+        max-height: 40vh;
+        overflow-y: auto;
     }
 
     .mat-divider {
         margin: 20px 0;
     }
+
+    .door-ul {
+        width: 100%;
+        overflow-y: auto;
+    }
+
+    .door-info {
+        .door-detail-row {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+
+        .property {
+            width: 35%;
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        .property-value {
+            width: 65%;
+        }
+    }
+
+
+    #resp-table {
+        width: 100%;
+        display: table;
+    }
+
+    #resp-table-body {
+        display: table-row-group;
+    }
+
+    .resp-table-row {
+        display: table-row;
+    }
+
+    .table-body-cell {
+        display: table-cell;
+        border: 1px solid #dddddd;
+        padding: 8px;
+        line-height: 1.42857143;
+        vertical-align: top;
+    }
+
+    ul {
+        list-style-type: none;
+        display: grid;
+        li {  
+            display: inline-block;          
+            div { 
+                float: left;
+            }
+            p { 
+                float: left;
+                margin-left: 7px;
+            }
+        }
+    }
+
+
 }
 
 .svg-container {
@@ -75,4 +140,21 @@
     svg {
         width: 100%;
     }
+
+    div.tooltip {	
+        position: absolute;			
+        text-align: center;			
+        width: 100px;					
+        height: 50px;					
+        padding: 2px;				
+        font: 12px sans-serif;		
+        background: lightsteelblue;	
+        border: 0px;		
+        border-radius: 8px;			
+        pointer-events: none;			
+    }
+}
+
+.hide {
+    display: none;
 }
